@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday, Mom! 💖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <main id="book">
+
+    <!-- PAGE 1 -->
+    <section class="page active" id="p1">
+      <div class="cake" aria-hidden="true">🎂</div>
+      <h1>Happy Birthday,<br>Mommy!</h1>
+      <p class="lead">Today the whole world celebrates the sweetest mom ever 💕</p>
+      <p class="hint">tap anywhere for a little love ✨</p>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page" id="p2">
+      <h2>Our sweetest moments 📸</h2>
+      <div class="gallery">
+        <figure class="polaroid"><div class="frame"><img src="assets/pic1.jpg" alt="Mom photo 1" onerror="this.remove()"></div><figcaption>Us 💞</figcaption></figure>
+        <figure class="polaroid"><div class="frame"><img src="assets/pic2.jpg" alt="Mom photo 2" onerror="this.remove()"></div><figcaption>Always together 🌷</figcaption></figure>
+        <figure class="polaroid"><div class="frame"><img src="assets/pic3.jpg" alt="Mom photo 3" onerror="this.remove()"></div><figcaption>So pretty 🌸</figcaption></figure>
+        <figure class="polaroid"><div class="frame"><img src="assets/pic4.jpg" alt="Mom photo 4" onerror="this.remove()"></div><figcaption>Love you 💕</figcaption></figure>
+        <figure class="polaroid"><div class="frame"><img src="assets/pic5.jpg" alt="Mom photo 5" onerror="this.remove()"></div><figcaption>My hero and heroine 🦸‍♀️</figcaption></figure>
+        <figure class="polaroid"><div class="frame"><img src="assets/pic6.jpg" alt="Mom photo 6" onerror="this.remove()"></div><figcaption>Forever 💖</figcaption></figure>
+        <figure class="polaroid"><div class="frame"><img src="assets/pic7.jpg" alt="Mom photo 7" onerror="this.remove()"></div><figcaption>Whole Family 😊</figcaption></figure>
+        <figure class="polaroid"><div class="frame"><img src="assets/pic8.jpg" alt="Mom photo 8" onerror="this.remove()"></div><figcaption>Prettiest Mommy with us</figcaption></figure>
+        <figure class="polaroid"><div class="frame"><img src="assets/pic9.jpg" alt="Mom photo 9" onerror="this.remove()"></div><figcaption>Together Forever</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page" id="p3">
+      <h2>Little movies of love 🎬</h2>
+      <div class="videos">
+        <figure class="clip"><video controls preload="metadata" src="assets/video1.mp4"></video></figure>
+      </div>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page" id="p4">
+      <div class="letter">
+        <h2>I love you, Mom! 💌</h2>
+        <ul class="wishes">
+          <li>🌷 May your day be full of laughter and your health recover as soon as possible.</li>
+          <li>🤗 Thank you for every hug, every sacrifice, every "eat something."</li>
+          <li>❤️ Thank You for every sacrifice, every kind of effort you do for me, waking me up early for my work/school, reminding me to eat my food, reaching me out when my life got busy....🥰</li>
+          <li>🌟 Wishing you health, peace and all the happiness you give us.</li>
+        </ul>
+        <p class="sign">Happy Birthday, my beautiful Mommy 🎉<br>Love you so much that i can't write here...</p>
+        <button class="again" id="replay" type="button">Celebrate again 🎈</button>
+      </div>
+    </section>
+
+  </main>
+
+  <nav id="nav" aria-label="Pages">
+    <div id="dots"></div>
+  </nav>
+
+  <audio id="music" src="music.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
